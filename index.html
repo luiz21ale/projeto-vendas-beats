@@ -1,153 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Beats</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/rest.css">
 </head>
-
 <body>
-    <header>
-        <h1>🔥 Beats Exclusivos 🔥</h1>
-        <nav>
-            <ul>
-                <li><a href="#banner">Home</a></li>
-                <li><a href="#beats">Beats</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="banner">
-        <div class="banner-container">
-            <h2>Beat Destaque</h2>
-            <p>Ouça um trecho do nosso beat mais popular!</p>
-            <button id="play-destaque" class="play-button">▶ Play</button>
-            <input type="range" id="progress-bar" value="0" max="100">
-        </div>
-        <audio id="audio-destaque">
-            <source src="/src/audio/boombap.wav" type="audio/mp3">
-        </audio>
-    </section>
-
-    <section id="beats">
-        <h2>Beats Disponíveis</h2>
-        <!-- Filtro de Gêneros -->
-        <div class="filter-container">
-            <label for="genre-filter">Escolha o Gênero:</label>
-            <select id="genre-filter">
-                <option value="all">Todos</option>
-                <option value="pop">Pop</option>
-                <option value="trap">Trap</option>
-                <option value="boombap">Boom Bap</option>
-                <option value="hiphop">Hip-Hop</option>
-                <option value="lofi">Lo-Fi</option>
-            </select>
-        </div>
-
-        <div class="beats-container" id="beats-list">
-            <div class="beat-item" data-genre="trap">
-                <h3>Beat 1</h3>
-                <p>BPM: 120 | Gênero: Trap</p>
-                <button class="play-button" data-audio="beat1.mp3">▶ Ouvir</button>
-                <audio id="audio-beat1" src="/src/audio/boombap.wav"></audio>
-                <button class="buy-button">💰 Comprar</button>
+    <body>
+        <header>
+            <h1>🔥 Beats Exclusivos 🔥</h1>
+            <nav>
+                <ul>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#beats">Beats</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="banner">
+            <div class="banner-container">
+                <h2>Beat Destaque</h2>
+                <p>Ouça um trecho do nosso beat mais popular!</p>
+                <button id="play-destaque" class="play-button">▶ Play</button>
+                <input type="range" id="progress-bar" value="0" max="100">
             </div>
-            <div class="beat-item" data-genre="hiphop">
-                <h3>Beat 2</h3>
-                <p>BPM: 140 | Gênero: Hip-Hop</p>
-                <button class="play-button" data-audio="beat2.mp3">▶ Ouvir</button>
-                <audio id="audio-beat2" src="/src/audio/boombap.wav"></audio>
-                <button class="buy-button">💰 Comprar</button>
+            <audio id="audio-destaque">
+                <source src="/src/audio/boombap.wav" type="audio/mp3">
+            </audio>
+        </section>
+    
+        <section id="beats">
+            <h2>Beats Disponíveis</h2>
+            <!-- Filtro de Gêneros -->
+            <div class="filter-container">
+                <label for="genre-filter">Escolha o Gênero:</label>
+                <select id="genre-filter">
+                    <option value="all">Todos</option>
+                    <option value="pop">Pop</option>
+                    <option value="trap">Trap</option>
+                    <option value="boombap">Boom Bap</option>
+                    <option value="hiphop">Hip-Hop</option>
+                    <option value="lofi">Lo-Fi</option>
+                </select>
             </div>
-            <div class="beat-item" data-genre="lofi">
-                <h3>Beat 3</h3>
-                <p>BPM: 130 | Gênero: Lo-Fi</p>
-                <button class="play-button" data-audio="beat3.mp3">▶ Ouvir</button>
-                <audio id="audio-beat3" src="/src/audio/boombap.wav"></audio>
-                <button class="buy-button">💰 Comprar</button>
+    
+            <div class="beats-container" id="beats-list">
+                <div class="beat-item" data-genre="trap">
+                    <h3>Beat 1</h3>
+                    <p>BPM: 120 | Gênero: Trap</p>
+                    <button class="play-button" data-audio="beat1.mp3">▶ Ouvir</button>
+                    <audio id="audio-beat1" src="/src/audio/boombap.wav"></audio>
+                    <button class="buy-button">💰 Comprar</button>
+                </div>
+                <div class="beat-item" data-genre="hiphop">
+                    <h3>Beat 2</h3>
+                    <p>BPM: 140 | Gênero: Hip-Hop</p>
+                    <button class="play-button" data-audio="beat2.mp3">▶ Ouvir</button>
+                    <audio id="audio-beat2" src="/src/audio/boombap.wav"></audio>
+                    <button class="buy-button">💰 Comprar</button>
+                </div>
+                <div class="beat-item" data-genre="lofi">
+                    <h3>Beat 3</h3>
+                    <p>BPM: 130 | Gênero: Lo-Fi</p>
+                    <button class="play-button" data-audio="beat3.mp3">▶ Ouvir</button>
+                    <audio id="audio-beat3" src="/src/audio/boombap.wav"></audio>
+                    <button class="buy-button">💰 Comprar</button>
+                </div>
+                <div class="beat-item" data-genre="pop">
+                    <h3>Beat 4</h3>
+                    <p>BPM: 125 | Gênero: Pop</p>
+                    <button class="play-button" data-audio="beat4.mp3">▶ Ouvir</button>
+                    <audio id="audio-beat4" src="/src/audio/boombap.wav"></audio>
+                    <button class="buy-button">💰 Comprar</button>
+                </div>
+                <div class="beat-item" data-genre="boombap">
+                    <h3>Beat 5</h3>
+                    <p>BPM: 110 | Gênero: Boom Bap</p>
+                    <button class="play-button" data-audio="beat5.mp3">▶ Ouvir</button>
+                    <audio id="audio-beat5" src="/src/audio/boombap.wav"></audio>
+                    <button class="buy-button">💰 Comprar</button>
+                </div>
             </div>
-            <div class="beat-item" data-genre="pop">
-                <h3>Beat 4</h3>
-                <p>BPM: 125 | Gênero: Pop</p>
-                <button class="play-button" data-audio="beat4.mp3">▶ Ouvir</button>
-                <audio id="audio-beat4" src="/src/audio/boombap.wav"></audio>
-                <button class="buy-button">💰 Comprar</button>
-            </div>
-            <div class="beat-item" data-genre="boombap">
-                <h3>Beat 5</h3>
-                <p>BPM: 110 | Gênero: Boom Bap</p>
-                <button class="play-button" data-audio="beat5.mp3">▶ Ouvir</button>
-                <audio id="audio-beat5" src="/src/audio/boombap.wav"></audio>
-                <button class="buy-button">💰 Comprar</button>
-            </div>
-        </div>
-    </section>
+        </section>
+    
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato pelo Telegram para mais informações.</p>
+            <a href="https://t.me/seuTelegram" class="contact-button">📩 Fale Conosco</a>
+        </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato pelo Telegram para mais informações.</p>
-        <a href="https://t.me/seuTelegram" class="contact-button">📩 Fale Conosco</a>
-    </section>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Controle de áudio do Beat Destaque
-            const playDestaque = document.getElementById("play-destaque");
-            const playButtons = document.querySelectorAll('.play-button');
-            const audioDestaque = document.getElementById("audio-destaque");
-            const progressBar = document.getElementById("progress-bar");
-            let currentAudio = null;
-
-            playDestaque.addEventListener("click", () => {
-                if (currentAudio && currentAudio !== audioDestaque) {
-                    currentAudio.pause();
-                }
-                if (audioDestaque.paused) {
-                    audioDestaque.play();
-                    playDestaque.textContent = "⏸ Pause";
-                } else {
-                    audioDestaque.pause();
-                    playDestaque.textContent = "▶ Play";
-                }
-                currentAudio = audioDestaque;
-            });
-
-            audioDestaque.addEventListener("timeupdate", () => {
-                const progress = (audioDestaque.currentTime / audioDestaque.duration) * 100;
-                progressBar.value = progress;
-            });
-
-            progressBar.addEventListener("input", () => {
-                const seekTime = (progressBar.value / 100) * audioDestaque.duration;
-                audioDestaque.currentTime = seekTime;
-            });
-            
-
-            // Filtro de Gêneros
-            const genreFilter = document.getElementById("genre-filter");
-            const beatsList = document.getElementById("beats-list");
-            const beatsItems = beatsList.getElementsByClassName("beat-item");
-
-            genreFilter.addEventListener("change", (e) => {
-                const selectedGenre = e.target.value;
-
-                // Mostrar ou esconder beats com base no gênero selecionado
-                for (let beat of beatsItems) {
-                    const genre = beat.getAttribute("data-genre");
-
-                    if (selectedGenre === "all" || selectedGenre === genre) {
-                        beat.style.display = "block"; // Exibir o beat
-                    } else {
-                        beat.style.display = "none"; // Esconder o beat
-                    }
-                }
-            });
-        });
-    </script>
-
+        <script src="/js/script.js"></script>
 </body>
-
 </html>
+
+
+
+    <!-- <script>
+        
+    </script> -->
+
